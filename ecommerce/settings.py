@@ -15,7 +15,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = ('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
+
 ALLOWED_HOSTS = ['hairgrow.onrender.com', '*']
 
 CSRF_TRUSTED_ORIGINS =  ['https://hairgrow.onrender.com/']
