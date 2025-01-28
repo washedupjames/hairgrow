@@ -15,7 +15,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = ('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['hairgrow.onrender.com', '*']
 
@@ -46,6 +46,8 @@ INSTALLED_APPS = [
     'crispy_forms', # Crispy forms
 
     'django_countries',
+
+    
 ]
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
@@ -155,3 +157,5 @@ EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')
 
 # Allow Paypal popups
 SECURE_CROSS_ORIGIN_OPENER_POLICY = 'same-origin-allow-popups'
+
+
